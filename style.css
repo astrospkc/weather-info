@@ -1,11 +1,10 @@
 body {
-  background: black;
-  color: bisque;
+  background: rgb(219, 217, 217);
 }
 
-div {
+/* div {
   background-color: rgb(129, 235, 235);
-}
+} */
 
 div h1 {
   font-family: serif;
@@ -14,7 +13,7 @@ div h1 {
 
 .heading {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 0rem;
   font-size: 50px;
 }
 
@@ -22,11 +21,18 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 nav ul h1 {
   color: rgb(173, 7, 7);
   /* margin-left: 2rem; */
-  padding-right: 2rem;
+  padding-right: 0rem;
+}
+nav ul img {
+  height: 60px;
 }
 
 nav ul {
@@ -35,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 1rem;
+  margin: 0rem;
   font-size: 30px;
   list-style-type: none;
 }
@@ -46,14 +52,17 @@ nav ul li a {
 }
 .input {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 input {
   display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 2rem;
-  border-width: 5px;
+  margin: 1rem;
+  border-width: 2px;
+  border-radius: 30px;
 }
 
 button {
@@ -64,15 +73,21 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 1s;
+  border-radius: 20px;
 }
 
 button:hover {
   background-color: blue;
 }
-
+.card1 {
+  background-image: url(card1.jpg);
+}
 div.card {
-  margin-top: 5rem;
-  margin-left: 14rem;
+  /* margin-top: 5rem;
+  margin-left: 14rem; */
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 div.gallery {
@@ -80,23 +95,25 @@ div.gallery {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 4rem;
-  border: 1px solid #ccc;
+  /* border: 1px solid #282727; */
   float: left;
+  border-radius: 40px;
   width: 180px;
   height: 230px;
   /* display: inline-flex; */
   /* justify-content: space-between; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(12, 58, 111),
     rgb(50, 132, 239)
-  );
+  ); */
+  background-image: url(card1.jpg);
 }
 
 div.gallery:hover {
   border: 4px solid #777;
   cursor: pointer;
-  box-shadow: 10px 10px 50px lightblue;
+  /* box-shadow: 10px 10px 50px lightblue; */
 }
 
 div.gallery ul li {
@@ -140,4 +157,16 @@ table tr td {
 
 .value {
   text-align: center;
+}
+
+@media screen and (max-width: 677px) {
+  .card {
+    /* margin-top: 5rem;
+    margin-left: 14rem; */
+    display: contents;
+    justify-items: center;
+    margin: 0;
+    /* align-items: center;
+    justify-content: center; */
+  }
 }
