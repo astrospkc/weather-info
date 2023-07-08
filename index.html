@@ -15,60 +15,62 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="cardContainer">
-      <div class="container">
-        <nav>
-          <ul>
-            <h1>
-              <img src="./images/weather  logo.png" alt="weather logo" />
-            </h1>
-            <h1>Weather App</h1>
-          </ul>
-          <div class="input">
-            <div>
-              <input type="text" id="city" />
-            </div>
-            <div>
-              <button type="submit" id="submit">Search</button>
-            </div>
+    <div class="wholeContainer">
+      <div class="navbarContent">
+        <div class="logo-heading">
+          <h1 class="weather-logo">
+            <img src="./images/weather  logo.png" alt="weather logo" />
+          </h1>
+          <h1>Weather App</h1>
+        </div>
+        <div class="input">
+          <div>
+            <input type="text" id="city" />
           </div>
-        </nav>
+          <div>
+            <button type="submit" id="submit">Search</button>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <h1 class="heading">
-      <img src="./images/weatherheading.png" alt="" /> Weather for
-      <span id="cityName"></span>
-    </h1>
+      <div class="weather-part">
+        <h1 class="heading-part">
+          <img src="./images/weatherheading.png " alt="" /> Weather for -
+          <span id="cityName"> </span>
+        </h1>
 
-    <div class="card">
-      <div class="gallery card1">
-        <div class="temperature"><h1>Temperature</h1></div>
-        <h1 class="value"><span id="temp2"></span>°C</h1>
+        <div class="weather-cards">
+          <div class="card">
+            <div>
+              <h1>Temperature</h1>
+              <h1><span id="temp2"></span>°C</h1>
+            </div>
 
-        <ul>
-          <li>Temperature is <span id="temp"></span></li>
-          <li>Min Temperature is <span id="min_temp"></span></li>
-          <li>Max Temperature is <span id="max_temp"></span></li>
-        </ul>
-      </div>
-      <div class="gallery">
-        <div class="Humidity"><h1 class="humid">Humidity</h1></div>
-        <h1 class="value"><span id="humidity2"></span>%</h1>
-        <ul>
-          <li>Humidity is <span id="humidity"></span></li>
-          <li>Sunrise time is <span id="sunrise"></span></li>
-          <li>Sunset time is <span id="sunset"></span></li>
-        </ul>
-      </div>
-      <div class="gallery">
-        <div class="windSpeed"><h1 class="wind">Wind Speed</h1></div>
-        <h1 class="value"><span id="wind_speed2"></span>km/hr</h1>
-        <ul>
-          <li>Feels Like <span id="feels_like"></span></li>
-          <li>Wind Speed is <span id="wind_speed"></span></li>
-          <li>Wind Degrees is <span id="wind_degrees"></span></li>
-        </ul>
+            <ul>
+              <li>Temperature is <span id="temp"></span></li>
+              <li>Min Temperature is <span id="min_temp"></span></li>
+              <li>Max Temperature is <span id="max_temp"></span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h1>Humidity</h1>
+            <h1><span id="humidity2"></span>%</h1>
+            <ul>
+              <li>Humidity is <span id="humidity"></span></li>
+              <li>Sunrise time is <span id="sunrise"></span></li>
+              <li>Sunset time is <span id="sunset"></span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h1 class="wind">Wind Speed</h1>
+            <h1><span id="wind_speed2"></span>km/hr</h1>
+            <ul>
+              <li>Feels Like <span id="feels_like"></span></li>
+              <li>Wind Speed is <span id="wind_speed"></span></li>
+              <li>Wind Degrees is <span id="wind_degrees"></span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
